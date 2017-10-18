@@ -135,6 +135,7 @@ def cdice_response(bot, update):
     # Here you have the number in variable number
 
     # Implement HERE custom dice responde
+    update.message.reply_text("Custom dice rolled!\nCame out {}".format(randint(1, number)))
 
     return ConversationHandler.END
 
