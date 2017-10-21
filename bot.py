@@ -12,7 +12,7 @@ GET_DOWNLOADMUSIC1, GET_DOWNLOADMUSIC2 = range(2)
 
 def start(bot, update):
     update.message.reply_text(
-        "Hello!\nI'm botify. I will be here to assist you in any song you need.\n"
+        "Hiiiiiii!\nI'm Mr. MeeTube, look at me!\n"
         "So, what can you do?\n\n"
         "/song - Get a song from YouTube!\n"
         "\nMiscellaneous:\n"
