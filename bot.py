@@ -66,6 +66,8 @@ def downloadmusic(bot, update, user_data):
             messagetosend += '{}. {}\n'.format(i, n)
             i += 1
         messagetosend = messagetosend.strip()
+        messagetosend += '\n\n4. To cancel!'
+        messagetosend = messagetosend.strip()
         update.message.reply_text(messagetosend)
 
         user_data['titles'] = titles
@@ -73,7 +75,7 @@ def downloadmusic(bot, update, user_data):
 
         return GET_DOWNLOADMUSIC2
     except:
-        update.message.reply_text('An error ocurred. Sorry for the inconvenience')
+        update.message.reply_text('An error ocurred! Sorry for the inconvenience!!')
         return ConversationHandler.END
 
 
@@ -87,8 +89,11 @@ def downloadmusic_response(bot, update, user_data):
         choice = 1
     elif lastmsg.strip() == '3':
         choice = 2
+    elif lastmsg.strip() == '4':
+        update.message.reply_text("Canceled! Look at me!!")
+        return ConversationHandler.END
     else:
-        update.message.reply_text("That isn't an option. Please choose 1, 2 or 3.")
+        update.message.reply_text("That isn't an option! Please choose 1, 2, 3 or 4!!")
         return GET_DOWNLOADMUSIC2
 
     musictitle = user_data['titles'][choice]
