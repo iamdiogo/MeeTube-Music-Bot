@@ -119,10 +119,12 @@ def coin(bot, update):
     options = ['heads (cara)', 'tails (coroa)']
     c = randint(0,1)
     update.message.reply_text("Coin flipped!\nCame out {}".format(options[c]))
+    return ConversationHandler.END
 
 def dice(bot, update):
     f = randint(1,6)
     update.message.reply_text("Dice rolled!\nCame out {}".format(str(f)))
+    return ConversationHandler.END
 
 def cdice(bot, update):
     update.message.reply_text("Please send me a number")
@@ -132,10 +134,13 @@ def cdice(bot, update):
 def cdice_response(bot, update):
     number = update.message.text
     number = number.strip()
-    # Here you have the number in variable number
-
-    # Implement HERE custom dice responde
-    update.message.reply_text("Custom dice rolled!\nCame out {}".format(randint(1, number)))
+    try:
+        number = int(number)
+        f = randint(1,number)
+        update.message.reply_text("Dice rolled!\nCame out {}".format(str(f)))
+    except:
+        update.message.reply_text("That's not a valid number!! Please send me a number, in the numeric form! Hoowyyy!")
+        return GET_CDICE
 
     return ConversationHandler.END
 
@@ -150,6 +155,7 @@ def main():
 
     # Commands for the bot
     dp.add_handler(CommandHandler("start", start))
+    dp.add_handler(CommandHandler("help", start))
     dp.add_handler(CommandHandler("coin", coin))
     dp.add_handler(CommandHandler("dice", dice))
 
