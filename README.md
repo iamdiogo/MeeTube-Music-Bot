@@ -4,7 +4,7 @@ MeeTube is an open-source <b>telegram bot that gets songs</b> from YouTube for y
 
 You can speak with him [here!](https://t.me/MeeTubeBot)
 
-<b><i>People reported that it doesn't work on iOS. Update coming to fix that.</i></b>
+<i>People reported that it doesn't work on iOS. Update coming to fix that.</i>
 
 ## Dependencies
 
