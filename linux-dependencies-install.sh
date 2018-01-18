@@ -3,7 +3,7 @@
 sudo apt-get update
 
 #installs pip3, should make it check first
-sudo apt install python3-pip --fix-missing -y
+#sudo apt install python3-pip --fix-missing -y
 
 #installs python dependencies
 
