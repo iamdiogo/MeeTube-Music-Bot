@@ -1,5 +1,6 @@
 # MeeTube: Music Bot, look at me!
 ![GitHub Logo](https://i.imgur.com/o8ZAQz4.png)
+<br>
 MeeTube is an open-source <b>telegram bot that gets songs</b> from YouTube for you.
 
 You can speak with him [here!](https://t.me/MeeTubeBot)
@@ -9,16 +10,16 @@ You can speak with him [here!](https://t.me/MeeTubeBot)
 ## Dependencies
 
 To run the bot, you'll need <b>python 3</b> installed with a few modules:
-#### telegram
-```$ pip3 install python-telegram-bot --upgrade```
-#### beautiful soup
-```$ pip3 install bs4 --upgrade```
-#### lxml
-```$ pip3 install lxml --upgrade```
-#### youtube_dl
-```$ pip3 install youtube_dl --upgrade```
+
+```
+python-telegram-bot
+requests
+bs4
+lxml
+youtube_dl
+```
 #### ffprobe
-Then, for the functionality of getting the song together, you're gonna need <b>ffprobe</b>, part of the <b>ffmpeg package</b>:
+We'll also need <b>ffprobe</b>, dependency of `youtube_dl`, and part of the <b>ffmpeg package</b>:
 
 ```sudo apt-get update```
 
