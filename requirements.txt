@@ -1,0 +1,16 @@
+asn1crypto==0.24.0
+beautifulsoup4==4.6.3
+bs4==0.0.1
+certifi==2018.8.24
+cffi==1.11.5
+chardet==3.0.4
+cryptography==2.3.1
+future==0.16.0
+idna==2.7
+lxml==4.2.5
+pycparser==2.18
+python-telegram-bot==11.1.0
+requests==2.19.1
+six==1.11.0
+urllib3==1.23
+youtube-dl==2018.9.10
