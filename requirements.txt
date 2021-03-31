@@ -7,7 +7,7 @@ chardet==3.0.4
 cryptography==2.3.1
 future==0.16.0
 idna==2.7
-lxml==4.2.5
+lxml==4.6.3
 pycparser==2.18
 python-telegram-bot==11.1.0
 requests==2.19.1
